@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <div class="testimonial-section">
+            <h1>
+                <span>CodingWorks</span> Publishing Online class with Inflearn
+            </h1>
+            <div class="testimonial-pic">
+                <img
+                    class="active"
+                    src="./images/face-01.jpg"
+                    data-alt="tab1"
+                />
+                <img src="./images/face-02.jpg" data-alt="tab2" />
+                <img src="./images/face-03.jpg" data-alt="tab3" />
+                <img src="./images/face-04.jpg" data-alt="tab4" />
+            </div>
+            <div class="testimonial">
+                <div class="content active" id="tab1">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Dolorem eveniet ratione ea quis accusantium! Sed
+                        deleniti ut soluta repudiandae sunt tempore rem,
+                        recusandae dignissimos molestias aspernatur, corporis,
+                        provident at itaque cumque quidem quisquam modi. Quidem
+                        non temporibus quod laudantium animi laboriosam
+                        reprehenderit optio consequuntur beatae dolore odit
+                        tempore amet quam libero recusandae possimus obcaecati,
+                        impedit adipisci molestiae unde magnam quisquam
+                        cupiditate. Provident consectetur omnis necessitatibus
+                        officiis illo quis, assumenda harum aliquid odio,
+                        tempora aut voluptatem nam est! Eligendi, possimus
+                        inventore!
+                    </p>
+                    <p>Sally, Web Designer</p>
+                </div>
+                <div class="content" id="tab2">
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Dolorum excepturi quae quidem dolorem officiis
+                        assumenda ut! Aliquid nemo inventore numquam maiores
+                        laborum doloribus praesentium nisi unde quis magni.
+                        Suscipit illo adipisci asperiores, eius hic ipsa ullam
+                        nulla maiores enim ad placeat dignissimos facilis
+                        quibusdam, eum assumenda minus magnam non quae dicta
+                        consequuntur atque debitis omnis nobis? Nam ipsa
+                        deleniti itaque qui nobis! Quod eligendi, debitis vitae,
+                        quaerat atque veritatis officiis cum aut consequatur
+                        cumque enim, temporibus dignissimos voluptates neque
+                        unde.
+                    </p>
+                    <p>Amy, Graphic Designer</p>
+                </div>
+                <div class="content" id="tab3">
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Laborum odio vero, ipsam suscipit repellendus quia
+                        asperiores nulla aperiam delectus ipsa, rem fuga
+                        accusamus autem quod eos. Voluptas nulla eaque
+                        recusandae quam laudantium maxime quae dolores!
+                        Similique delectus consequuntur, vitae possimus atque
+                        sint, est quod minima excepturi temporibus harum
+                        impedit, eligendi dicta officiis cupiditate! Beatae nemo
+                        quis, quo cupiditate totam, velit enim ipsa sit animi in
+                        voluptates laborum rerum? Iste, porro! Quidem ad,
+                        nesciunt itaque ea atque minima? Quia, sapiente illum.
+                    </p>
+                    <p>Jung Ho, Developer</p>
+                </div>
+                <div class="content" id="tab4">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Expedita facilis quas, quod suscipit deleniti molestiae
+                        sapiente rem! Perspiciatis, odit sit? Beatae quia neque
+                        voluptatem libero! Pariatur modi corporis facilis quasi
+                        in eum doloremque, dignissimos sed unde mollitia quis
+                        quam, blanditiis dolorum necessitatibus! Iure illo
+                        commodi ab autem ea cupiditate. Inventore quis vitae
+                        accusantium nesciunt labore officiis odit, tempora
+                        accusamus esse rem quisquam beatae reprehenderit
+                        similique facere suscipit nisi animi at laudantium nobis
+                        aspernatur quidem voluptates. Eum dolores quo eveniet
+                        natus?
+                    </p>
+                    <p>Chires, Printing Designer</p>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(".testimonial-pic img").click(function () {
+                $(this).addClass("active");
+                $(this).siblings().removeClass("active");
+
+                $(".testimonial .content").removeClass("active");
+                $("#" + $(this).attr("data-alt")).addClass("active");
+            });
+        </script>
+    </body>
+</html>

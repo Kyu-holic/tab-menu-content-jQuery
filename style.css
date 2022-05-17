@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap");
+
+body {
+    font-family: "Raleway", sans-serif, "Noto Sans KR", sans-serif;
+    color: #222;
+    line-height: 1.5em;
+    font-weight: 300;
+    margin: 0;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+a {
+    color: #222;
+    text-decoration: none;
+}
+
+.testimonial-section {
+    width: 800px;
+    height: 430px;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.201);
+}
+
+.testimonial-section h1 {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.testimonial-section h1 span {
+    color: crimson;
+}
+
+.testimonial-pic {
+}
+
+.testimonial-pic img {
+    width: 100px;
+    filter: grayscale(1);
+    margin: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.testimonial-pic img.active {
+    border-radius: 50%;
+    filter: grayscale(0);
+}
+
+.testimonial {
+}
+
+.testimonial .content {
+    display: none;
+}
+
+.testimonial .content.active {
+    display: block;
+}
+
+.testimonial p:nth-child(2) {
+    font-weight: bold;
+}
